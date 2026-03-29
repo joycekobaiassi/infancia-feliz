@@ -498,3 +498,6 @@ body {
   }
 }
 }
+header {
+  background: linear-gradient(135deg, #ff7a00, #ffd700, #43e97b);
+}
