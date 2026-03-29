@@ -90,8 +90,17 @@ function resposta(etapa, dado = "") {
 }
 
 // ===== WHATSAPP FINAL =====
-const mensagem = `Olá! 😊 Conheci o Centro Educacional Infância Feliz pelo site e gostei muito!
+function irWhats(info) {
+  const numero = "5548999999999";
 
-Tenho interesse em: ${info}
+  const mensagem = `Olá! 😊
+
+Conheci o Centro Educacional Infância Feliz pelo site e gostei muito!
+
+Tenho interesse em:
+${info}
 
 Gostaria de mais informações e, se possível, agendar uma visita.`;
+
+  window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`);
+}
