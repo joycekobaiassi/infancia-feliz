@@ -330,6 +330,62 @@ nav a:hover {
   margin-top: 10px;
   transition: 0.3s;
 }
+/* ===== RESPONSIVO CELULAR ===== */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .logo-area h2 {
+    font-size: 26px;
+  }
+
+  .logo-area h1 {
+    font-size: 14px;
+  }
+
+  /* MENU */
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  /* HERO */
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* BOTÕES */
+  button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  /* CARDS */
+  .cards {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* CHAT */
+  .chat-box {
+    width: 90%;
+    right: 5%;
+    bottom: 100px;
+  }
+
+  /* WHATSAPP */
+  .whatsapp-float {
+    bottom: 20px;
+    right: 15px;
+  }
+
+}
 
 .header-top button:hover {
   transform: scale(1.05);
