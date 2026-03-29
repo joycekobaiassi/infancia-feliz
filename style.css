@@ -442,4 +442,59 @@ body {
   transform: scale(1.05);
   background: #fff3e0;
 }
+/* ===== CABEÇALHO PREMIUM ===== */
+
+/* TEXTO PEQUENO */
+.topo {
+  font-size: 14px;
+  letter-spacing: 3px;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* CAIXA DO NOME */
+.titulo-destaque {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(5px);
+  margin: 10px 0;
+  border: 2px solid rgba(255,255,255,0.4);
+}
+
+/* NOME PRINCIPAL */
+.titulo-destaque h2 {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 0;
+  color: #fff;
+
+  text-shadow: 
+    2px 2px 0px #ff7a00,
+    4px 4px 10px rgba(0,0,0,0.3);
+
+  animation: brilho 2s infinite alternate;
+}
+
+/* SUBTÍTULO */
+.header-content p {
+  font-size: 15px;
+  margin-top: 5px;
+  opacity: 0.95;
+}
+
+/* ANIMAÇÃO LEVE */
+@keyframes brilho {
+  from {
+    text-shadow: 
+      2px 2px 0px #ff7a00,
+      4px 4px 10px rgba(0,0,0,0.3);
+  }
+  to {
+    text-shadow: 
+      2px 2px 0px #ffd700,
+      6px 6px 15px rgba(0,0,0,0.4);
+  }
+}
 }
