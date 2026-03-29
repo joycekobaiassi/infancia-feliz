@@ -21,7 +21,7 @@ function abrirChat() {
 function resposta(etapa, dado = "") {
   const chat = document.getElementById("chatConteudo");
 
-  if (!chat) return; // segurança
+  if (!chat) return;
 
   if (etapa === "inicio") {
     chat.innerHTML = `
@@ -102,35 +102,35 @@ ${info}
 
 Gostaria de mais informações e, se possível, agendar uma visita.`;
 
-  // abre WhatsApp
   window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`);
 
-  function mostrarTurma(tipo) {
+  // FECHA CHAT
+  const chat = document.getElementById("chatBox");
+  chat.style.display = "none";
+}
+
+// ===== TURMAS (AGORA FUNCIONA) =====
+function mostrarTurma(tipo) {
   const titulo = document.getElementById("tituloTurma");
   const texto = document.getElementById("textoTurma");
   const box = document.getElementById("detalheTurma");
 
-  if (!titulo || !texto || !box) {
-    console.log("Erro: elementos não encontrados");
-    return;
-  }
-
-  let conteudo = {
+  const conteudo = {
     mini: {
       titulo: "👶 Mini Maternal",
-      texto: "Fase de adaptação com foco no acolhimento, desenvolvimento emocional e estímulos sensoriais. Trabalhamos com carinho, rotina segura e atividades que respeitam o tempo da criança."
+      texto: "Fase de adaptação com foco no acolhimento, desenvolvimento emocional e estímulos sensoriais."
     },
     maternal: {
       titulo: "🧸 Maternal",
-      texto: "Desenvolvimento da fala, coordenação motora e socialização. Atividades lúdicas, música, histórias e brincadeiras que despertam a curiosidade."
+      texto: "Desenvolvimento da fala, coordenação motora e socialização com atividades lúdicas."
     },
     pre: {
       titulo: "🎨 Pré",
-      texto: "Preparação para alfabetização com foco em letras, números, criatividade e autonomia. A criança aprende brincando e desenvolvendo confiança."
+      texto: "Preparação para alfabetização com foco em letras, números e criatividade."
     },
     fundamental: {
       titulo: "📚 Ensino Fundamental",
-      texto: "Base sólida em leitura, escrita e matemática. Trabalhamos também o emocional, autonomia e pensamento crítico para preparar para o futuro."
+      texto: "Base sólida em leitura, escrita e matemática com desenvolvimento emocional."
     }
   };
 
@@ -139,9 +139,4 @@ Gostaria de mais informações e, se possível, agendar uma visita.`;
 
   box.style.display = "block";
   box.scrollIntoView({ behavior: "smooth" });
-}
-
-  // FECHA O CHAT
-  const chat = document.getElementById("chatBox");
-  chat.style.display = "none";
 }
