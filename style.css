@@ -390,4 +390,6 @@ nav a:hover {
 .header-top button:hover {
   transform: scale(1.05);
 }
-
+body {
+  overflow-x: hidden;
+}
