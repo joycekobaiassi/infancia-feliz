@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Centro Educacional Infância Feliz</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- BOLHAS -->
+<div class="bolhas">
+  <span style="left:10%"></span>
+  <span style="left:30%"></span>
+  <span style="left:50%"></span>
+  <span style="left:70%"></span>
+  <span style="left:90%"></span>
+</div>
+
+<!-- HEADER -->
+<header class="header-top">
+  <div class="overlay"></div>
+
+  <div class="header-content">
+    <h1>Centro Educacional</h1>
+    <h2>Infância Feliz</h2>
+    <p>Do Mini Maternal ao 5º ano</p>
+
+    <button onclick="falarWhats()">Agendar Visita</button>
+  </div>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre Nós</a>
+    <a href="#turmas">Turmas</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <h2>🎈 Aprender brincando é muito mais divertido!</h2>
+  <p>Um lugar cheio de cores, alegria e descobertas para o seu filho 💛</p>
+  <button onclick="falarWhats()">Agendar Visita</button>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="sobre">
+  <div class="sobre-box">
+
+    <h2>💛 Sobre Nós</h2>
+
+    <p>
+    O Centro Educacional Infância Feliz nasceu do sonho de duas amigas apaixonadas pela educação e pelo desenvolvimento infantil: Ana Paula e Mariana Souza.
+    </p>
+
+    <p>
+    Após anos de experiência na área pedagógica, elas perceberam a necessidade de um espaço que unisse aprendizado de qualidade com acolhimento, carinho e respeito à infância.
+    </p>
+
+    <p>
+    Desde então, a escola vem construindo uma história baseada no cuidado e no desenvolvimento completo da criança.
+    </p>
+
+    <p><strong>Direção:</strong> Ana Paula & Mariana Souza</p>
+
+  </div>
+</section>
+
+<!-- SEGURANÇA -->
+<section class="seguranca">
+  <h2>Ambiente seguro e preparado 🛡️</h2>
+  <div class="cards">
+    <div class="card">📹 Monitoramento por câmeras</div>
+    <div class="card">👩‍🏫 Equipe qualificada</div>
+    <div class="card">🚪 Controle de acesso</div>
+    <div class="card">❤️ Cuidado individual</div>
+  </div>
+</section>
+
+<!-- TURMAS -->
+<section id="turmas" class="turmas">
+  <h2>Nossas Turmas</h2>
+
+  <div class="cards">
+    <div class="card" onclick="mostrarTurma('mini')">👶 Mini Maternal (1 ano)</div>
+    <div class="card" onclick="mostrarTurma('maternal')">🧸 Maternal (2 a 3 anos)</div>
+    <div class="card" onclick="mostrarTurma('pre')">🎨 Pré (4 a 5 anos)</div>
+    <div class="card" onclick="mostrarTurma('fundamental')">📚 1º ao 5º ano</div>
+  </div>
+</section>
+
+<!-- DETALHE DAS TURMAS -->
+<section class="detalhe-turma" id="detalheTurma">
+  <h2 id="tituloTurma"></h2>
+  <p id="textoTurma"></p>
+</section>
+
+<!-- GALERIA -->
+<section class="galeria">
+  <h2>Nosso dia a dia 📸</h2>
+
+  <div class="galeria-grid">
+    <img src="imagens/foto1.jpg" alt="">
+    <img src="imagens/foto2.jpg" alt="">
+    <img src="imagens/foto3.jpg" alt="">
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="depoimentos">
+  <h2>O que os pais dizem 💬</h2>
+  <div class="cards">
+    <div class="card">"Meu filho ama estudar aqui!"</div>
+    <div class="card">"Equipe maravilhosa!"</div>
+    <div class="card">"Ambiente seguro e acolhedor!"</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contato" class="cta">
+  <h2>📍 Entre em contato</h2>
+
+  <p><strong>Endereço:</strong> Rua das Flores, 123 - Centro, Florianópolis - SC</p>
+
+  <p>Agende uma visita e conheça nosso espaço de perto 💛</p>
+
+  <button onclick="falarWhats()">Agendar Visita</button>
+</section>
+
+<!-- BOTÃO WHATSAPP -->
+<a class="whatsapp-float" onclick="falarWhats()">💬</a>
+
+<script src="script.js"></script>
+
+<div class="chatbot-btn" onclick="abrirChat()">
+  💬 Fale com a Ana
+</div>
+<div id="chatBox" class="chat-box">
+  <h3>💛 Olá, sou a Ana!</h3>
+
+  <div id="chatConteudo">
+    <p>Vou te ajudar a encontrar a melhor opção 😊</p>
+
+    <button onclick="resposta('inicio')">Começar</button>
+  </div>
+</div>
+</body>
+</html>
