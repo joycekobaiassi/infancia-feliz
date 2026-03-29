@@ -392,6 +392,8 @@ nav a:hover {
 }
 body {
   overflow-x: hidden;
+}
+
 .galeria-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
