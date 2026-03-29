@@ -102,5 +102,10 @@ ${info}
 
 Gostaria de mais informações e, se possível, agendar uma visita.`;
 
+  // abre WhatsApp
   window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`);
+
+  // FECHA O CHAT
+  const chat = document.getElementById("chatBox");
+  chat.style.display = "none";
 }
