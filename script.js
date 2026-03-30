@@ -140,3 +140,11 @@ const conteudo = {
   box.style.display = "block";
   box.scrollIntoView({ behavior: "smooth" });
 }
+function enviarFeedback(event) {
+  event.preventDefault();
+
+  document.getElementById("msgFeedback").innerText =
+    "💛 Obrigado pelo seu feedback! Ele é muito importante para nós.";
+
+  event.target.reset();
+}
