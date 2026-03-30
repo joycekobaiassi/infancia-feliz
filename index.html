@@ -46,6 +46,7 @@
 <section id="inicio" class="hero">
   <h2>🎈 Aprender brincando é muito mais divertido!</h2>
   <p>Um lugar cheio de cores, alegria e descobertas para o seu filho 💛</p>
+  <p>💛 Mais de <strong>1.000 famílias</strong> já fizeram parte da nossa história</p>
   <button onclick="falarWhats()">Agendar Visita</button>
 </section>
 
@@ -114,14 +115,36 @@
 
 <!-- DEPOIMENTOS -->
 <section class="depoimentos">
-  <h2>O que os pais dizem 💬</h2>
+  <h2>💬 O que os pais dizem</h2>
+
   <div class="cards">
-    <div class="card">"Meu filho ama estudar aqui!"</div>
-    <div class="card">"Equipe maravilhosa!"</div>
-    <div class="card">"Ambiente seguro e acolhedor!"</div>
+    <div class="card">
+      <p>"Minha filha evoluiu muito aqui. A escola é acolhedora e passa muita segurança!"</p>
+      <strong>— Mãe da Cecília (5º ano)</strong>
+    </div>
+
+    <div class="card">
+      <p>"O Joaquim ama vir pra escola! Isso não tem preço ❤️"</p>
+      <strong>— Mãe do Joaquim (Maternal)</strong>
+    </div>
+
+    <div class="card">
+      <p>"Equipe maravilhosa, cuidam com carinho e atenção. Recomendo muito!"</p>
+      <strong>— Mãe da Laura (Pré)</strong>
+    </div>
   </div>
 </section>
+  <section class="feedback">
+  <h2>✍️ Deixe seu feedback</h2>
 
+  <form onsubmit="enviarFeedback(event)">
+    <input type="text" placeholder="Seu nome" required>
+    <textarea placeholder="Seu comentário" required></textarea>
+    <button type="submit">Enviar Feedback</button>
+  </form>
+
+  <p id="msgFeedback"></p>
+</section>
 <!-- CTA -->
 <section id="contato" class="cta">
   <h2>📍 Entre em contato</h2>
