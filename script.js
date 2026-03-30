@@ -115,24 +115,24 @@ function mostrarTurma(tipo) {
   const texto = document.getElementById("textoTurma");
   const box = document.getElementById("detalheTurma");
 
-  const conteudo = {
-    mini: {
-      titulo: "👶 Mini Maternal",
-      texto: "Fase de adaptação com foco no acolhimento, desenvolvimento emocional e estímulos sensoriais."
-    },
-    maternal: {
-      titulo: "🧸 Maternal",
-      texto: "Desenvolvimento da fala, coordenação motora e socialização com atividades lúdicas."
-    },
-    pre: {
-      titulo: "🎨 Pré",
-      texto: "Preparação para alfabetização com foco em letras, números e criatividade."
-    },
-    fundamental: {
-      titulo: "📚 Ensino Fundamental",
-      texto: "Base sólida em leitura, escrita e matemática com desenvolvimento emocional."
-    }
-  };
+const conteudo = {
+  mini: {
+    titulo: "👶 Mini Maternal",
+    texto: "Acolhimento, adaptação e segurança emocional. Trabalhamos estímulos sensoriais, rotina estruturada e desenvolvimento afetivo com muito carinho."
+  },
+  maternal: {
+    titulo: "🧸 Maternal",
+    texto: "Desenvolvimento da linguagem, coordenação motora e socialização através de atividades lúdicas, músicas e brincadeiras educativas."
+  },
+  pre: {
+    titulo: "🎨 Pré",
+    texto: "Preparação para alfabetização com foco em letras, números, criatividade e autonomia. A criança aprende de forma leve e divertida."
+  },
+  fundamental: {
+    titulo: "📚 Ensino Fundamental",
+    texto: "Base sólida em leitura, escrita e matemática, com desenvolvimento emocional e pensamento crítico para preparar o aluno para o futuro."
+  }
+};
 
   titulo.innerText = conteudo[tipo].titulo;
   texto.innerText = conteudo[tipo].texto;
