@@ -5,33 +5,73 @@ body {
 }
 
 /* HEADER */
+/* ===== HEADER PREMIUM FINAL ===== */
+
 header {
-  background: linear-gradient(90deg, #4facfe, #43e97b);
+  background: linear-gradient(135deg, #ff7a00, #ffd700, #43e97b);
   color: white;
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px 40px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
+  position: relative;
 }
 
-/* ÁREA DO NOME */
-.logo-area h1 {
-  font-size: 20px;
+/* TEXTO PEQUENO */
+.topo {
+  font-size: 13px;
+  letter-spacing: 3px;
+  opacity: 0.9;
   margin: 0;
-  opacity: 0.9;
 }
 
-.logo-area h2 {
-  font-size: 40px;
-  margin: 5px 0;
-  font-weight: 700;
-  letter-spacing: 1px;
+/* CAIXA DO NOME */
+.titulo-destaque {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(8px);
+  margin: 10px 0;
+  border: 2px solid rgba(255,255,255,0.5);
 }
 
-.logo-area p {
-  font-size: 16px;
+/* NOME PRINCIPAL */
+.titulo-destaque h2 {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0;
+  color: #fff;
+
+  text-shadow:
+    3px 3px 0px #ff7a00,
+    6px 6px 15px rgba(0,0,0,0.3);
+
+  animation: brilho 2s infinite alternate;
+}
+
+/* SUBTÍTULO */
+.header-content p {
+  font-size: 15px;
   margin-top: 5px;
-  opacity: 0.9;
+  opacity: 0.95;
+}
+
+/* BOTÃO HEADER */
+.header-content button {
+  margin-top: 15px;
+  background: white;
+  color: #ff7a00;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header-content button:hover {
+  transform: scale(1.08);
 }
 
 /* MENU */
@@ -40,12 +80,37 @@ nav {
 }
 
 nav a {
-  margin: 10px;
+  margin: 0 12px;
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
+nav a:hover {
+  color: #000;
+}
+
+/* ANIMAÇÃO */
+@keyframes brilho {
+  from {
+    text-shadow:
+      3px 3px 0px #ff7a00,
+      6px 6px 15px rgba(0,0,0,0.3);
+  }
+  to {
+    text-shadow:
+      3px 3px 0px #ffd700,
+      8px 8px 20px rgba(0,0,0,0.4);
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .titulo-destaque h2 {
+    font-size: 32px;
+  }
+}
 /* HERO */
 .hero {
   text-align: center;
