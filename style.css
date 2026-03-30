@@ -566,3 +566,28 @@ body {
 header {
   background: linear-gradient(135deg, #ff7a00, #ffd700, #43e97b);
 }
+.feedback {
+  background: #fff;
+  padding: 40px 20px;
+}
+
+.feedback form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feedback input,
+.feedback textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins';
+}
+
+.feedback textarea {
+  height: 100px;
+  resize: none;
+}
